@@ -5,4 +5,6 @@ Scanner - reads each character from a file and generates a token depending on th
 Token - represents the stuff encountered in Crux: identifiers, integer, float, etc.
 
 Compiler - takes a file, scans it, and prints out the tokens encountered.
+
+
 ====
