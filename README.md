@@ -1,7 +1,7 @@
 Crux Scanner
 ====
 
-Introduction
+#Introduction
 
 A compiler is comprised of seven stages:
 -	Lexical analysis: Identify the logical pieces of the input.
@@ -12,11 +12,11 @@ A compiler is comprised of seven stages:
 -	Generation: Fabricate the structure.
 -	Optimization: Improve the resulting structure.
 
-Project
+#Project
 
 This project implements the lexical analysis stage, or scanner, of the compiler for the language Crux. The scanner uses a greedy approach to generate the logical pieces, or tokens, from a source input. In other words, it will attempt to consume as much characters as possible before it generates a token.
 
-Classes
+#Classes
 
 Compiler: Takes a source input file and generates the tokens encountered during the scan.
 
@@ -24,14 +24,14 @@ Scanner: Uses a greedy approach to generate the tokens from a source input.
 
 Token: Represents the logical pieces of Crux.
 
-Sample
+#Sample
 
-Input
+##Input
 
 or and not let var array true false if else while return
 
 
-Output
+##Output
 
 OR(lineNum:1, charPos:1)
 
