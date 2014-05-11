@@ -27,9 +27,35 @@ Token: Represents the logical pieces of Crux.
 Sample
 
 Input
-=
+
+or and not let var array true false if else while return
+
 
 Output
 
-ASSIGN(lineNum:1, charPos:1)
+OR(lineNum:1, charPos:1)
+
+AND(lineNum:1, charPos:4)
+
+NOT(lineNum:1, charPos:8)
+
+LET(lineNum:1, charPos:12)
+
+VAR(lineNum:1, charPos:16)
+
+ARRAY(lineNum:1, charPos:20)
+
+TRUE(lineNum:1, charPos:26)
+
+FALSE(lineNum:1, charPos:31)
+
+IF(lineNum:1, charPos:37)
+
+ELSE(lineNum:1, charPos:40)
+
+WHILE(lineNum:1, charPos:45)
+
+RETURN(lineNum:1, charPos:51)
+
 EOF(lineNum:2, charPos:1)
+
