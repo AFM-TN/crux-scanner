@@ -1,10 +1,15 @@
-This is an implementation of a scanner for the language Crux.
-
-Scanner - reads each character from a file and generates a token depending on the lexeme encountered.
-
-Token - represents the stuff encountered in Crux: identifiers, integer, float, etc.
-
-Compiler - takes a file, scans it, and prints out the tokens encountered.
-
-
+Crux Scanner
 ====
+
+This project deals with the first stage of a compiler: lexical analysis.
+
+The goal of lexical analysis is to transform input source text into 'more meaningful chunks' that may be used later on: parsing, etc.
+
+These 'more meaningful chunks' are known as tokens. 
+A token contains the following information:
+  - kind: the type of token it is
+  - lineNumber: the line where this token occurs
+  - charPosition: the character position at which this token starts
+  - lexeme: the token's lexical contents
+
+
