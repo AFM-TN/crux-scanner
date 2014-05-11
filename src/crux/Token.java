@@ -146,6 +146,10 @@ public class Token {
 		return String.format(responseNoValue, kind, lineNumber, charPosition);
 	}
 
+	public boolean isToken(Kind kind) {
+		return this.kind.equals(kind);
+	}
+	
 	public static boolean isToken(String lexeme) {
 		for (Kind kind : Kind.values()) {
 			if (kind.lexeme.startsWith(lexeme)) {
